@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Inicial</title>
+</head>
+<body>
+  <h1>Olá! Essa é a página inicial.</h1>
+  <p>Texto simples feito com Flask.</p>
+
+  <form action="{{ url_for('pagina') }}" method="get">
+    <button type="submit">Abrir outra página</button>
+  </form>
+</body>
+</html>
