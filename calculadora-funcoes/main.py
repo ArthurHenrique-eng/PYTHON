@@ -1,5 +1,5 @@
-from src.functions import FirstDegreeFunction, SecondDegreeFunction, FunctionAnalyzer, FunctionError
-from src.grapher import FunctionGrapher
+from functions import FirstDegreeFunction, SecondDegreeFunction, FunctionAnalyzer, FunctionError
+from grapher import FunctionGrapher
 import matplotlib.pyplot as plt
 
 

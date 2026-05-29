@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Interface-Tkinter-00d4ff?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Interface-CLI-00d4ff?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Arquitetura-Clean%20Code-brightgreen?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge"/>
 </p>
@@ -26,9 +26,9 @@ Repositório com pequenos projetos em Python voltados para matemática, simulaco
 
 ## Sobre o projeto
 
-Este projeto são um conjunto de sistemas desenvolvidos em Python, com interface gráfica construída
-usando `tkinter`. O objetivo foi praticar a organização de código em módulos com responsabilidades
-bem definidas, seguindo princípios de **Clean Code** e separação de camadas.
+Este projeto é um conjunto de sistemas desenvolvidos em Python, com interface de linha de comando.
+O objetivo foi praticar a organização de código em módulos com responsabilidades bem definidas,
+seguindo princípios de **Clean Code** e separação de camadas.
 
 ---
 
@@ -55,6 +55,7 @@ Documentacao completa: [`calculadora-financeira/calculadora-financeira.md`](calc
 
 ```bash
 cd calculadora-funcoes
+pip install -r requirements.txt
 python main.py
 ```
 
@@ -119,6 +120,7 @@ PYTHON/
 |   |-- functions.py
 |   |-- grapher.py
 |   |-- main.py
+|   |-- requirements.txt
 |   `-- calculadora-funcoes.md
 |-- calculadora-imc/
 |   |-- imc.py
@@ -148,6 +150,12 @@ Entre na pasta do projeto desejado e execute o arquivo `main.py`.
 ##### Requisitos
 - Python 3.x instalado
 - `pip` para instalar dependencias quando necessario
+
+O projeto `calculadora-funcoes` possui dependencias para graficos:
+```bash
+pip install -r calculadora-funcoes/requirements.txt
+```
+
 O projeto `conversor-moedas` possui dependencia externa:
 ```bash
 pip install -r conversor-moedas/requirements.txt

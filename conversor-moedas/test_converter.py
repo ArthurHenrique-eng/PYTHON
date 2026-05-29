@@ -1,7 +1,7 @@
 import unittest
 import json
 from pathlib import Path
-from src.converter import CurrencyConverter, ConversorError
+from converter import CurrencyConverter, ConversorError
 
 
 class TestCurrencyConverter(unittest.TestCase):
@@ -10,7 +10,7 @@ class TestCurrencyConverter(unittest.TestCase):
     def setUp(self):
         """Configura um conversor para os testes"""
         # Usa arquivo de teste se existir, senão cria um temporário
-        current_dir = Path(__file__).parent.parent
+        current_dir = Path(__file__).parent
         rates_file = current_dir / 'data' / 'exchange_rates.json'
         self.converter = CurrencyConverter(str(rates_file))
 
@@ -89,7 +89,7 @@ class TestCurrencyConverter(unittest.TestCase):
         """Testa formatação de moeda"""
         formatado = self.converter.format_currency(1000.50, 'BRL')
         self.assertIn('R$', formatado)
-        self.assertIn('1000', formatado)
+        self.assertIn('1.000', formatado)
 
     def test_get_conversion_summary(self):
         """Testa resumo de conversão para múltiplas moedas"""
@@ -138,7 +138,7 @@ class TestCurrencyFormatting(unittest.TestCase):
     """Testes para formatação de moedas"""
 
     def setUp(self):
-        current_dir = Path(__file__).parent.parent
+        current_dir = Path(__file__).parent
         rates_file = current_dir / 'data' / 'exchange_rates.json'
         self.converter = CurrencyConverter(str(rates_file))
 
@@ -161,7 +161,7 @@ class TestCurrencyFormatting(unittest.TestCase):
         """Testa se formatação preserva o valor"""
         valor = 1234.56
         formatado = self.converter.format_currency(valor, 'BRL')
-        self.assertIn('1234', formatado)
+        self.assertIn('1.234', formatado)
 
 
 if __name__ == '__main__':

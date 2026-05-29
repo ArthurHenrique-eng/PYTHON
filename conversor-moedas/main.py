@@ -1,5 +1,5 @@
-from src.converter import CurrencyConverter, ConversorError
-from src.api_handler import APIHandler
+from converter import CurrencyConverter, ConversorError
+from api_handler import APIHandler
 import os
 
 
@@ -85,15 +85,9 @@ def converter_simples(converter: CurrencyConverter):
         valor = float(input("Digite o valor: "))
 
         resultado = converter.convert(valor, origem, destino)
-        taxa = converter.get_rate(origem)
-
-        origem_info = converter.get_currency_info(origem)
-        destino_info = converter.get_currency_info(destino)
-
         print_section("RESULTADO DA CONVERSÃO")
         print(f"\n{converter.format_currency(valor, origem)} = {converter.format_currency(resultado, destino)}")
-        print(f"\nTaxa de câmbio: 1 {origem} = {taxa:.4f} USD")
-        print(f"Taxa de conversão: 1 {origem} = {resultado/valor:.4f} {destino}")
+        print(f"\nTaxa de conversão: 1 {origem} = {converter.convert(1, origem, destino):.4f} {destino}")
 
         input("\nPressione ENTER para continuar...")
 

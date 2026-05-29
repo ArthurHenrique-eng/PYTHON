@@ -76,8 +76,8 @@ A aplicação oferece um menu interativo com as seguintes opções:
 ### Exemplo de Uso Programático
 
 ```python
-from src.functions import FirstDegreeFunction, SecondDegreeFunction, FunctionAnalyzer
-from src.grapher import FunctionGrapher
+from functions import FirstDegreeFunction, SecondDegreeFunction, FunctionAnalyzer
+from grapher import FunctionGrapher
 import matplotlib.pyplot as plt
 
 # Primeiro Grau: f(x) = ax + b
@@ -208,4 +208,3 @@ altura_max = fuc.maximum_value()  # Altura máxima
 <a href="https://github.com/ArthurHenrique-eng">
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 </a> 
-

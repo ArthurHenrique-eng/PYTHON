@@ -18,7 +18,7 @@ class APIHandler:
     def __init__(self):
         self.session = requests.Session()
         self.session.timeout = 10
-        self.cache_file = Path(__file__).parent.parent / 'data' / 'cache.json'
+        self.cache_file = Path(__file__).parent / 'data' / 'cache.json'
 
     def fetch_rates_exchangerate_api(self, base: str = 'USD') -> Optional[Dict]:
         """

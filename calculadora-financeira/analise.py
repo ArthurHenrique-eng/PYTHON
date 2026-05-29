@@ -1,6 +1,9 @@
 """Módulo para análise geral de investimentos e inflação"""
 from typing import List, Dict
-from .juros import FinanceError
+try:
+    from .juros import FinanceError
+except ImportError:
+    from juros import FinanceError
 
 
 class FinancialAnalysis:

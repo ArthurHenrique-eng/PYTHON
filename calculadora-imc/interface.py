@@ -1,8 +1,8 @@
 def coletar_dados():
     print("CALCULADORA IMC")
-    nomePessoa = str(input("Digite seu nome e aperte ENTER:"))
-    alturaPessoa = float(input("Digite sua altura em metros com ponto decimal e aperte ENTER:"))
-    pesoPessoa = float(input("Digite seu peso em KG com ponto decimal e aperte ENTER:"))
+    nome = input("Digite seu nome e aperte ENTER: ")
+    altura = float(input("Digite sua altura em metros com ponto decimal e aperte ENTER: "))
+    peso = float(input("Digite seu peso em KG com ponto decimal e aperte ENTER: "))
     return nome, altura, peso
 
 

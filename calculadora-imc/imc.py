@@ -1,22 +1,22 @@
-IMC = pesoPessoa / (alturaPessoa ** 2)
+def calcular_imc(peso, altura):
+    if altura <= 0:
+        raise ValueError("Altura deve ser maior que zero.")
+    if peso <= 0:
+        raise ValueError("Peso deve ser maior que zero.")
 
-if IMC <= 18.5:
-    print(nomePessoa, "seu IMC é:", IMC, "e é considerado abaixo do peso normal!")
+    return peso / (altura ** 2)
 
-elif IMC >= 18.6 and IMC <= 24.9:
-    print(nomePessoa, "seu IMC é:", IMC, "e é considerado com o peso normal!")
 
-elif IMC >= 25.0 and IMC <= 29.9:
-    print(nomePessoa, "seu IMC é:", IMC, "e é considerado com sobrepeso!")
+def classificar_imc(imc):
+    if imc <= 18.5:
+        return "abaixo do peso normal"
+    if imc <= 24.9:
+        return "com peso normal"
+    if imc <= 29.9:
+        return "com sobrepeso"
+    if imc <= 34.9:
+        return "com obesidade grau I"
+    if imc <= 39.9:
+        return "com obesidade grau II"
 
-elif IMC >= 30.0 and IMC <= 34.9:
-    print(nomePessoa, "seu IMC é:", IMC, "e é considerado obesidade grau I!")
-
-elif IMC >= 35.0 and IMC <= 39.9:
-    print(nomePessoa, "seu IMC é:", IMC, "e é considerado obesidade grau II!")
-
-elif IMC >= 40.0:
-    print(nomePessoa, "seu IMC é:", IMC, "e é considerado obesidade grau III!")
-
-else:
-    print("Valores inválidos, reinicie o programa!")
+    return "com obesidade grau III"

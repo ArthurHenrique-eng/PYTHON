@@ -1,7 +1,10 @@
 """Módulo para análise de investimentos"""
 from typing import List, Dict
 import math
-from .juros import FinanceError
+try:
+    from .juros import FinanceError
+except ImportError:
+    from juros import FinanceError
 
 
 class InvestmentAnalyzer:

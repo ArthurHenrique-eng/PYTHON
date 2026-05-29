@@ -94,8 +94,8 @@ A aplicação oferece um menu interativo com as seguintes opções:
 ### Exemplos de Uso Programático
 
 ```python
-from src.converter import CurrencyConverter
-from src.api_handler import APIHandler
+from converter import CurrencyConverter
+from api_handler import APIHandler
 
 # Criar conversor
 converter = CurrencyConverter()
@@ -277,4 +277,3 @@ for moeda, taxa in sorted(taxas.items()):
 <a href="https://github.com/ArthurHenrique-eng">
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 </a> 
-

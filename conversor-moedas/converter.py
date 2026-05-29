@@ -55,7 +55,7 @@ class CurrencyConverter:
 
         if rates_file is None:
             # Use o diretório padrão
-            current_dir = Path(__file__).parent.parent
+            current_dir = Path(__file__).parent
             rates_file = current_dir / 'data' / 'exchange_rates.json'
 
         self.rates_file = rates_file

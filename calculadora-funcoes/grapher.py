@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from .functions import FirstDegreeFunction, SecondDegreeFunction
+try:
+    from .functions import FirstDegreeFunction, SecondDegreeFunction
+except ImportError:
+    from functions import FirstDegreeFunction, SecondDegreeFunction
 
 
 class FunctionGrapher:

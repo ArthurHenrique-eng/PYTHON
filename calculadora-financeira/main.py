@@ -1,10 +1,10 @@
 import os
 import sys
-from src.juros import InterestCalculator, FinanceError
-from src.investimentos import InvestmentAnalyzer
-from src.emprestimos import LoanCalculator
-from src.analise import FinancialAnalysis
-from src.utils import (
+from juros import InterestCalculator, FinanceError
+from investimentos import InvestmentAnalyzer
+from emprestimos import LoanCalculator
+from analise import FinancialAnalysis
+from utils import (
     format_currency, format_percent, format_number,
     annual_to_monthly_rate, monthly_to_annual_rate,
     parse_percent, summary_table, print_amortization_schedule

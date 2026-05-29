@@ -99,7 +99,7 @@ A aplicação oferece um menu intuitivo com as seguintes seções:
 ### Cálculos de Juros
 
 ```python
-from src.juros import InterestCalculator
+from juros import InterestCalculator
 
 # Juros simples
 resultado = InterestCalculator.simple_interest(1000, 0.05, 2)
@@ -118,7 +118,7 @@ print(f"Taxa efetiva anual: {taxa_efetiva * 100:.2f}%")
 ### Análise de Investimentos
 
 ```python
-from src.investimentos import InvestmentAnalyzer
+from investimentos import InvestmentAnalyzer
 
 # Fluxos de caixa: investimento inicial + retornos anuais
 cash_flows = [-10000, 3000, 3000, 3000, 3000, 3000]
@@ -148,8 +148,8 @@ print(f"Quantidade no break even: {be['break_even_quantity']:.0f} unidades")
 ### Empréstimos
 
 ```python
-from src.emprestimos import LoanCalculator
-from src.utils import annual_to_monthly_rate
+from emprestimos import LoanCalculator
+from utils import annual_to_monthly_rate
 
 # Sistema PRICE (prestações iguais)
 price = LoanCalculator.price_amortization(
@@ -190,7 +190,7 @@ print(f"Economia: R$ {refinanciamento['total_savings']:.2f}")
 ### Análise Financeira
 
 ```python
-from src.analise import FinancialAnalysis
+from analise import FinancialAnalysis
 
 # Rentabilidade real
 real = FinancialAnalysis.real_return(0.08, 0.03)
@@ -218,7 +218,7 @@ print(f"Retorno total: {portfolio['total_return_percent']:.2f}%")
 ### Conversão de Taxas
 
 ```python
-from src.utils import (
+from utils import (
     annual_to_monthly_rate, 
     monthly_to_annual_rate,
     parse_percent,
