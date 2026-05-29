@@ -157,8 +157,6 @@ pip install -r conversor-moedas/requirements.txt
 | Tecnologia | Uso |
 |---|---|
 | [Python 3](https://www.python.org/) | Linguagem principal |
-| [tkinter](https://docs.python.org/3/library/tkinter.html) | Interface gráfica |
-| [webbrowser](https://docs.python.org/3/library/webbrowser.html) | Abertura de URL |
 
 ## Autor
 [![GitHub](https://img.shields.io/badge/GitHub-ArthurHenrique--eng-181717?style=flat-square&logo=github)](https://github.com/ArthurHenrique-eng)
